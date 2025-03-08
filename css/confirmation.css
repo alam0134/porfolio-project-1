@@ -1,0 +1,32 @@
+.bg-blur {
+    background-color: rgba(217, 217, 217, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    /* padding: 20px; */
+    background: url("../images/27080.jpg") no-repeat center center/cover;
+    backdrop-filter: blur(80px);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmation-container {
+    z-index: 4;
+}
+
+p {
+    opacity: 0.8;
+}
+
+.back-btn img {
+    width: 40px;
+    height: 40px; 
+}

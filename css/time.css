@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background: url("../images/27080.jpg") no-repeat center center/cover;
+    backdrop-filter: blur(80px);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-blur {
+    background-color: rgba(217, 217, 217, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* body {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url("../images/27080.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(80px);
+} */
+
+h2 {
+    text-align: start;
+    border-bottom: 1px black solid;
+    padding-bottom: 10px;
+}
+.container {
+    /* background: rgba(255, 255, 255, 0.2); */
+    /* backdrop-filter: blur(10px); */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    /* max-width: 400px; */
+    z-index: 4;
+}
+.time-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+.time-slot {
+    padding: 10px;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.time-slot.selected {
+    background-color: #555;
+    color: white;
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.back-btn {
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    padding: 10px 20px;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.confirm-btn {
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    /* font-weight: bold; */
+    position: relative;
+    bottom: 10px;
+    right: -130px;
+}

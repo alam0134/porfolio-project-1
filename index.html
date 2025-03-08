@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potfolio Project</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Css File -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav class="navbar navbar-dark fixed-top">
+        <div class="container-fluid">
+            <div class="navbar fixed-top blur-bg ps-3 pe-3">
+              <a class="navbar-brand" href="#"><img src="images/Logo-white.svg" alt="logo of brand"></a>
+              <a class="reservation-cta" href="#">Reservation</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <span class=""><img src="images/menu-4-fill-lg.svg" alt=""></span>
+              </button>
+            </div>
+            <div class="offcanvas offcanvas-top blur-nav text-white h-100" tabindex="-1" id="offcanvasNavbar">  
+              <div class="offcanvas-header">
+                    <!-- <h5 class="offcanvas-title">Menu</h5> -->
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-center hover-effect" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-center hover-effect" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link text-center hover-effect" href="#">Services</a></li>
+                        <li class="nav-item"><a class="nav-link text-center hover-effect" href="#">Contact</a></li>
+                    </ul>
+                    <!-- add the social like just like figma svg icons then hover effect on it -->
+                    <ul class="d-flex justify-content-around w-100 social-icon-list">
+                      <li class="nav-link social-icon">
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46"  class="bi bi-facebook" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+                        </a>
+                      </li>
+                      <li class="nav-link social-icon">
+                        <a class="" href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="nav-link social-icon">
+                        <a href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" class="bi bi-tiktok" viewBox="0 0 16 16">
+                            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="hero-section">
+      <h1 class="hero-heading">Good Food Makes Good Mood</h1>
+      <div class="bg"></div>
+      <img class="hero-img" src="images/42723.jpg" alt="">
+      <div class="">
+        <img class="avatar-1" src="images/profile-1.jpg" alt="">
+        <img class="avatar-2" src="images/profile-2.jpg" alt="">
+        <img class="avatar-3" src="images/profile-3.jpg" alt="">
+        <p class="avatar-text">1.4k+ Happy Customer</p>
+      </div>
+    </section>
+   </header>
+   <main>
+    <div class="meal-card">
+      <img class="meal-img mt-4" src="images/no-bg-meal-img.png" alt="image of meal">
+      <p class="meal-text mt-3">Whether you’re dining in or taking out, Join us for an unforgettable culinary experience—your table is waiting!</p>
+    </div>
+    <div class="btn-grp mb-3">
+      <a class="c-btn-secondary" href="#">Menu</a>
+      <a class="c-btn-primary ms-3" href="#">Book a table</a>
+    </div>
+    <div>
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <!-- <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div> -->
+        <div class="custom-indicator">
+          <span type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active dot-1" aria-current="true" aria-label="Slide 1"></span>
+          <span type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="dot-2"></span>
+          <span type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="dot-3"></span>
+        </div>
+        <div class="carousel-inner border-redious">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="images/grilled-chicken-breast-with-broccoli.jpg" class="d-block w-100 img-carosal" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/pexels-dapur-melodi-192125-1109197.jpg" class="d-block w-100 img-carosal" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/pexels-tonyleong81-2092906.jpg" class="d-block w-100 img-carosal" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon d-none" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon d-none" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div class="tag">
+            <span><img class="mb-1 me-1" src="images/seedling-line.svg" alt="plant logo"></span>
+            <p class="mb-0">Locally Sourced</p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+        <div class="meal-card-2">
+          <img class="meal-card-2-img" src="images/wine-and-bread-img.jpg" alt="image of wine and bread">
+          <div class="tag-2">
+            <span><img class="pb-1" src="images/goblet-2-line.svg" alt="icon of glass of wine"></span>
+            <p class="mb-0">Christmas Special</p>
+          </div>
+          <div class="hidden-text">
+          <a class="link" href="#"><p>Learn More..</p></a>
+          </div>
+        </div>
+        <h2 class="c-h2 mt-3">Celebrate With Us</h2>
+        <p class="meal-card-2-text">we’re delighted to offer a special Christmas menu filled with festive flavors and heartwarming dishes.</p>
+    </div>
+   </main>
+   <section class="reservation" id="reservation">
+      <h2 class="c-h3 mt-5 mb-4">Reserve Your Spot</h2>
+      <form action="">
+        <div class="mt-3">
+          <label for="exampleInputEmail1" class="">Full Name</label>
+          <input type="email" class="c-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Name">
+        </div>
+        <div class="quantity-container mt-3">
+          <label for="quantity" class="">Number Of Guest</label>
+          <!-- quantity btn -->
+          <span class="quantity-btn quantity-btn-1" onclick="decreaseQuantity()"><img src="images/quantity-btn-minus.svg" alt=""></span>
+          <input type="text" class="c-input input-text-btn" id="quantity" aria-describedby="emailHelp" placeholder="1">
+          <span class="quantity-btn quantity-btn-2" onclick="increaseQuantity()"><img src="images/quantity-btn-plus.svg" alt=""></span>
+        </div>
+        <div class="mt-3">
+          <label for="exampleInputEmail1" class="">Contact Info</label>
+          <input type="email" class="c-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Number Or Email">
+        </div>
+        <div class="mb-4">
+          <h3 class="date-time mt-3">Date And Time</h3>
+          <div class="mt-3 c-date-time">
+            <p class="">Chose Your Date And Time</p>
+            <a href="date.html"><img src="images/user-shared-2-line.svg" alt="user icon"></a>
+          </div>
+        </div>
+        <a class="submit-btn" href="#">Submit</a>
+      </form>
+   </section>
+   <section class="menu-exploation mt-5">
+    <h2 class="c-h2 mt-3">Explore Our Signatures</h2>
+    <div class="menu-card hidden-text-menu">
+      <p class="ms-4 mt-5 menu-card-title">Grilled Chicken Salad</p>
+      <img class="menu-card-img menu-img" src="images/menu-1-img.png" alt="image of wine and bread">
+      <div class="menu-card-tag">
+        <span><img class="pb-1 pe-1" src="images/heart-svg.svg" alt="icon of glass of wine"></span>
+        <p class="mb-0">High Protein</p>
+      </div>
+      <div class="menu-card-tag-2">
+        <p class="mb-0">1200 Cals</p>
+      </div>
+    </div>
+    <div class="menu-card mt-5 hidden-text-menu-u">
+      <p class="ms-4 mt-5 menu-card-title">Chicken and Shrimp Dumplings</p>
+      <img class="menu-card-img menu-img-u" src="images/menu-img-2.png" alt="image of meal">
+      <div class="menu-card-tag">
+        <span><img class="pb-1 pe-1" src="images/seafood-svg.svg" alt="icon of spoon and fork"></span>
+        <p class="mb-0">Seafood Combo</p>
+      </div>
+    </div>
+    <div class="menu-card mt-5 hidden-text-menu">
+      <p class="ms-4 mt-5 menu-card-title">Grilled Chicken and White Rice</p>
+      <img class="menu-card-img menu-img" src="images/menu-img-3.png" alt="image of meal">
+      <div class="menu-card-tag">
+        <span><img class="pb-1 pe-1" src="images/heart-svg.svg" alt="icon of spoon and fork"></span>
+        <p class="mb-0">High Protein</p>
+      </div>
+    </div>
+   </section>
+   <section class="review-section-main">
+    <h2 class="c-h2 mt-5">What Customer Says!</h2>
+    <div class="review-section mt-5">
+
+      <div class="review-card">
+        <div class="profile-name">
+          <img src="images/profile-3.jpg" class="review-img me-3" alt="image of user">
+          <div>
+            <p class="mb-0">Sarah M.</p>
+            <div>
+              <img src="images/riview-star.svg" alt="">
+              <img src="images/riview-star.svg" alt="">
+              <img src="images/riview-star.svg" alt="">
+              <img src="images/riview-star.svg" alt="">
+              <img src="images/riview-star.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="review-text mt-3 review-p">
+          <p class="mb-0">“The food was incredibly delicious, fresh, and full of flavor. Every dish was thoughtfully prepared, and I could truly taste the quality of the ingredients. The atmosphere was warm and welcoming.</p>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="profile-name">
+          <img src="images/profile-1.jpg" class="review-img me-3" alt="image of user">
+          <div>
+            <p class="mb-0">Omar H.</p>
+            <div>
+              <img src="images/riview-star.svg" alt="">
+              <img src="images/riview-star.svg" alt="">
+              <img src="images/riview-star.svg" alt="">
+              <img src="images/riview-star.svg" alt="">
+              <img src="images/Star-grey.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="review-text mt-3 review-p">
+          <p class="mb-0">Every dish was crafted with care, and the portions were perfect. The ambiance is cozy, and the staff is incredibly friendly. I’ve finally found my go-to vegan spot in town!</p>
+        </div>
+      </div>
+      
+      <div class="review-card">
+        <div class="profile-name">
+          <img src="images/profile-2.jpg" class="review-img me-3" alt="image of user">
+          <div>
+            <p class="mb-0">Zayn.</p>
+            <div>
+              <img src="images/riview-star.svg" alt="">
+              <img src="images/riview-star.svg" alt="">
+              <img src="images/riview-star.svg" alt="">
+              <img src="images/riview-star.svg" alt="">
+              <img src="images/Star-grey.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="review-text mt-3 review-p">
+          <p class="mb-0">I’m not even vegan, but this restaurant made me rethink my diet! The food is so flavorful, and you can tell everything is made with fresh, high-quality ingredients!</p>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="profile-name">
+          <img src="images/profile-4.jpg" class="review-img me-3" alt="image of user">
+          <div>
+            <p class="mb-0">Lina</p>
+            <div>
+              <img src="images/riview-star.svg" alt="">
+              <img src="images/riview-star.svg" alt="">
+              <img src="images/riview-star.svg" alt="">
+              <img src="images/riview-star.svg" alt="">
+              <img src="images/riview-star.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="review-text mt-3 review-p">
+          <p class="mb-0">It’s rare to find a vegan restaurant that balances taste and nutrition so well. Every bite felt nourishing, and the variety on the menu kept things exciting. The smoothie bowls are a must-try!</p>
+        </div>
+      </div>
+    </div>
+   </section>
+   <section class="career-section">
+    <h2 class="c-h2 mt-5">Join Our Team</h2>
+    <div>
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <!-- <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div> -->
+        <div class="custom-indicator">
+          <span type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active dot-c-1" aria-current="true" aria-label="Slide 1"></span>
+          <span type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="dot-c-2"></span>
+          <span type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="dot-c-3"></span>
+          <span type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="dot-c-4"></span>
+        </div>
+        <div class="carousel-inner border-redious">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="images/career-img-1.jpg" class="d-block w-100 img-carosal" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/career-img-2.jpg" class="d-block w-100 img-carosal" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/career-img-3.jpg" class="d-block w-100 img-carosal" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/career-img-4.jpg" class="d-block w-100 img-carosal" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon d-none" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon d-none" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <!-- <div class="tag">
+            <span><img class="mb-1 me-1" src="images/seedling-line.svg" alt="plant logo"></span>
+            <p class="mb-0">Locally Sourced</p>
+        </div> -->
+      </div>
+    </div>
+    <div class="career-cta">
+      <a class="c-btn-primary ms-3" href="#">Apply Now</a>
+    </div>
+   </section>
+   <section class="d-flex mt-5">
+    <div class="logos col-6">
+      <img src="images/Logo.svg" alt="">
+      <div>
+        <ul class="d-flex justify-content-around w-100">
+          <li class="nav-link social-icon-f fb">
+            <a class="" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"  class="bi bi-facebook" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+            </a>
+          </li>
+          <li class="nav-link social-icon-f instagram">
+            <a class="" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg>
+            </a>
+          </li>
+          <li class="nav-link social-icon-f tiktok">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" class="bi bi-tiktok" viewBox="0 0 16 16">
+                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav col-6 d-flex justify-content-center">
+        <ul class=" text-center list-unstyled">
+          <li><a class="text-decoration-none f-link" href="">Contact Us</a></li>
+          <li><a class="text-decoration-none f-link" href="">Reservation</a></li>
+          <li><a class="text-decoration-none f-link" href="">Menu</a></li>
+          <li><a class="text-decoration-none f-link" href="">Catering</a></li>
+        </ul>
+    </div>
+   </section>
+   <section class="email-section">
+    <div class="mt-3 d-flex">
+      <label for="exampleInputEmail1" class="d-none">Full Name</label>
+      <input type="email" class="c-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email">
+      <a class="submit-btn-2 ms-3" href="#">Submit</a>
+    </div>
+    <p class="ms-2 email">*Subscribe to our email list for updates!</p>
+   </section>
+   <footer class="">
+    <div class="d-flex justify-content-around">
+      <p>Terms & Condition</p>
+      <p>Privacy Policy</p>
+      <p>Cokies</p>
+    </div>
+    <p class="text-center">© 2025 Urban Eats Bistro. All rights reserved.</p>
+   </footer>
+ 
+      
+
+
+
+
+
+
+      
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  
+  </div> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <!-- custom js for quantity btn -->
+      <script>
+        let quantity = 1;
+        const minQuantity = 1;
+        const maxQuantity = 20;
+    
+        function updateButtons() {
+            document.querySelector(".quantity-btn:first-child").disabled = quantity <= minQuantity;
+            document.querySelector(".quantity-btn:last-child").disabled = quantity >= maxQuantity;
+        }
+    
+        function increaseQuantity() {
+            if (quantity < maxQuantity) {
+                quantity++;
+                document.getElementById("quantity").value = quantity;
+                updateButtons();
+            }
+        }
+    
+        function decreaseQuantity() {
+            if (quantity > minQuantity) {
+                quantity--;
+                document.getElementById("quantity").value = quantity;
+                updateButtons();
+            }
+        }
+    
+        updateButtons();
+
+
+
+        window.onload = function() {
+    const sectionId = window.location.hash.substring(1);
+    if (sectionId) {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+    }
+    };
+  </script>
+</body>
+</html>
