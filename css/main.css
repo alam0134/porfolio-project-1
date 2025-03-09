@@ -313,6 +313,10 @@ body {
     margin: 0 auto;
 }
 
+main {
+    margin: 0 auto;
+}
+
 .dot-1 {
     /* animation: changeColor 2s 1 alternate; */
     animation-name: changeColor;
