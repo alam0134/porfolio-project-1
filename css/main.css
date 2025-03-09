@@ -199,6 +199,13 @@ body {
     }
 }
 
+@media (min-width: 320px) {
+    .avatar-text {
+        font-size: 14px;
+    }
+    
+}
+
 .meal-img {
     height: 400px;
     width: 90%;
