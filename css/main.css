@@ -32,7 +32,12 @@ body {
 .reservation-cta {
     color: white;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 18px;
+}
+
+.navbar-brand img {
+    height: auto;
+    width: 60px;
 }
 
 .reservation-cta:hover {
