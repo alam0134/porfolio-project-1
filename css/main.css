@@ -177,14 +177,37 @@ body {
     font-family: "Inter", serif;
 }
 
+@media screen and (max-width: 320px) {
+    .avatar-text {
+        font-size: 14px;   
+    }
+    .avatar-1 {
+        left: 18%;
+    }
+    .avatar-2 {
+        left: 22%;
+    }   
+    .avatar-3 {
+        left: 26%;
+    }
+    .avatar-text {
+        left: 39%;
+    }
+}
+
 .meal-img {
     height: 400px;
     width: 90%;
     border-radius: 10px;
     display: flex;
-    justify-self: center;
+    /* justify-self: center; */
+    margin: 0 auto;
     object-fit: cover;
     background-color: rgba(255, 255, 255, 0.5);
+}
+
+.meal-card {
+    margin: 0 auto;
 }
 
 .meal-text {
