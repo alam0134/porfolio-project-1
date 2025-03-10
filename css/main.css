@@ -988,7 +988,7 @@ label {
     margin-top: 20px;
 }
 
-.reservation-submit {
+.reservation-submit-cta {
     width: 100%;
     display: flex;  
     justify-content: end;
