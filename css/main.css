@@ -988,6 +988,12 @@ label {
     margin-top: 20px;
 }
 
+.reservation-cta {
+    width: 100%;
+    display: flex;  
+    justify-content: end;
+    
+}
 .logos {
     display: flex;
     flex-direction: column;
