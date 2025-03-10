@@ -74,11 +74,17 @@ button {
     position: absolute;
     top: 10px;
     left: 0px;
-    padding: 10px 20px;
+    padding: 1px 6px;
     background: none;
     cursor: pointer;
     font-size: 16px;
     border-radius: 10px;
+}
+
+.back-btn img {
+    width: 30px;
+    height: 30px;    
+
 }
 
 .confirm-btn {
