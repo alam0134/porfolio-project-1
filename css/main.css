@@ -607,19 +607,21 @@ label {
 .quantity-btn-1 {
     position: absolute;
     right: 50px;
-    top: 53px;
+    top: 36px;
     z-index: 4;
     border: none;
     cursor: pointer;
+    padding: 10px;
 }
 
 .quantity-btn-2 {
     position: absolute;
     right: 10px;
-    top: 53px;
+    top: 36px;
     z-index: 4;
     border: none;
     cursor: pointer;
+    padding: 10px;
 }
 
 .input-text-btn {
