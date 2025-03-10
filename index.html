@@ -20,7 +20,7 @@
         <div class="container-fluid">
             <div class="navbar fixed-top blur-bg ps-3 pe-3">
               <a class="navbar-brand" href="#"><img src="images/Logo-white.svg" alt="logo of brand"></a>
-              <a class="reservation-cta" href="#">Reservation</a>
+              <a class="reservation-cta" href="#" onclick="alert('Hi, This Link Does Not Work, Since Its a FUN PROJECT :-|');">Reservation</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
                 <span class=""><img src="images/menu-4-fill-lg.svg" alt=""></span>
               </button>
@@ -81,8 +81,8 @@
       <p class="meal-text mt-3">Whether you’re dining in or taking out, Join us for an unforgettable culinary experience—your table is waiting!</p>
     </div>
     <div class="btn-grp mb-3">
-      <a class="c-btn-secondary" href="#">Menu</a>
-      <a class="c-btn-primary ms-3" href="#reservation">Book a table</a>
+      <a class="c-btn-secondary" href="#" onclick="alert('SORRY, CHEF IS SLEEPING');">Menu</a>
+      <a class="c-btn-primary ms-3" href="#" onclick="alert('WE ARE CLOSED FOR 10 YEARS');">Book a table</a>
     </div>
     <div class="meal-card card-1">
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -128,8 +128,8 @@
             <span><img class="pb-1" src="images/goblet-2-line.svg" alt="icon of glass of wine"></span>
             <p class="mb-0">Christmas Special</p>
           </div>
-          <div class="hidden-text">
-          <a class="link" href="#"><p>Learn More..</p></a>
+          <div class="hidden-text" id="hidden-text">
+          <a class="link" href="#hidden-text" onclick="alert('Hi, This Link Does Not Work, Since Its a FUN PROJECT :-|');"><p>Learn More..</p></a>
           </div>
         </div>
         <h2 class="c-h2 mt-3">Celebrate With Us</h2>
@@ -163,8 +163,8 @@
           </div>
         </div>
       </form>
-      <div class="reservation-submit-cta">
-        <a class="submit-btn" href="#">Submit</a>
+      <div class="reservation-submit-cta" id="reservation">
+        <a class="submit-btn" href="#reservation" onclick="alert('Are You Really Hungry?');">Submit</a>
       </div>
    </section>
    <section class="menu-exploation mt-5">
@@ -321,8 +321,8 @@
         </div> -->
       </div>
     </div>
-    <div class="career-cta">
-      <a class="c-btn-primary ms-3" href="#">Apply Now</a>
+    <div class="career-cta" id="career">
+      <a class="c-btn-primary ms-3" href="#career" onclick="alert('Hi, This Button Does Not Work, Since Its a FUN PROJECT :-|');">Apply Now</a>
     </div>
    </section>
    <section class="d-flex mt-5">
@@ -352,28 +352,28 @@
         </ul>
       </div>
     </div>
-    <div class="nav col-6 d-flex justify-content-center">
+    <div class="nav col-6 d-flex justify-content-center" id="footer-link">
         <ul class=" text-center list-unstyled">
-          <li><a class="text-decoration-none f-link" href="">Contact Us</a></li>
-          <li><a class="text-decoration-none f-link" href="">Reservation</a></li>
-          <li><a class="text-decoration-none f-link" href="">Menu</a></li>
-          <li><a class="text-decoration-none f-link" href="">Catering</a></li>
+          <li><a class="text-decoration-none f-link" href="#footer-link" onclick="alert('Hi, This Link Does Not Work, Since Its a FUN PROJECT :-|');">Contact Us</a></li>
+          <li><a class="text-decoration-none f-link" href="#footer-link" onclick="alert('Hi, This Link Does Not Work, Since Its a FUN PROJECT :-|');">Reservation</a></li>
+          <li><a class="text-decoration-none f-link" href="#footer-link" onclick="alert('Hi, This Link Does Not Work, Since Its a FUN PROJECT :-|');">Menu</a></li>
+          <li><a class="text-decoration-none f-link" href="#footer-link" onclick="alert('Hi, This Link Does Not Work, Since Its a FUN PROJECT :-|');">Catering</a></li>
         </ul>
     </div>
    </section>
    <section class="email-section">
-    <div class="mt-3 d-flex">
+    <div class="mt-3 d-flex" id="email">
       <label for="exampleInputEmail1" class="d-none">Full Name</label>
       <input type="email" class="c-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email">
-      <a class="submit-btn-2 ms-3" href="#">Submit</a>
+      <a class="submit-btn-2 ms-3" href="#email" onclick="alert('Hi, This Button Does Not Work, Since Its a FUN PROJECT :-|');">Submit</a>
     </div>
     <p class="ms-2 email">*Subscribe to our email list for updates!</p>
    </section>
-   <footer class="">
+   <footer class="" id="footer">
     <div class="d-flex justify-content-around">
-      <p>Terms & Condition</p>
-      <p>Privacy Policy</p>
-      <p>Cokies</p>
+      <a href="#footer" onclick="alert('Hi, This Link Does Not Work, Since Its a FUN PROJECT :-|');"><p>Terms & Condition</p></a>
+      <a href="#footer" onclick="alert('Hi, This Link Does Not Work, Since Its a FUN PROJECT :-|');"><p>Privacy Policy</p></a>
+      <a href="#footer" onclick="alert('Hi, This Link Does Not Work, Since Its a FUN PROJECT :-|');"><p>Cokies</p></a>
     </div>
     <p class="text-center">© 2025 Urban Eats Bistro. All rights reserved.</p>
    </footer>
