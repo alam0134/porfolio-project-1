@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #AB3434;
+    --secondary-color: #E1E1E1;
+    --tertiary-color: #FFF9E6;
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -57,7 +63,7 @@ h2 {
     font-size: 12px;
 }
 .time-slot.selected {
-    background-color: #555;
+    background-color: var(--primary-color);
     color: white;
 }
 button {
@@ -97,6 +103,6 @@ button {
     font-size: 20px;
     /* font-weight: bold; */
     position: relative;
-    bottom: 10px;
+    bottom: 0px;
     right: -33%;
 }
