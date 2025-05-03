@@ -4,12 +4,6 @@
     --tertiary-color: #FFF9E6;
 }
 
-/* img {
-    margin-top: 100px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-} */
-
 h1 {
     margin-bottom: 20px;
     margin-left: 20px;
@@ -24,17 +18,6 @@ header {
     margin: 0 auto;
     margin-top: 100px;
 }
-
-/* .days {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.days p {
-    font-family: "Inter", serif; 
-    font-size: 20px;
-} */
 
 button img {
     width: 30px;
@@ -51,13 +34,11 @@ button {
 
 body {
     height: 100vh;
+    max-width: 430px;
+    margin: 0 auto;
     font-family: Arial, sans-serif;
-    background-image: url("../images/27080.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* background-color: rgba(255, 255, 255, 0.8); */
-    backdrop-filter: blur(80px); /* Apply blur effect */
+    overflow: hidden;
+    position: relative;
 }
 
 .bg-blur {
@@ -66,11 +47,27 @@ body {
     width: 100%;
     position: absolute;
 }
+
+.bg-image {
+    height: 100vh;
+    width: 100%;
+    max-width: 430px;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bg-image img {
+    width: 100%;
+    max-width: 430px;
+    height: 100vh;
+    object-fit: cover;
+    filter: blur(80px); /* Apply blur effect */
+}
     
 .calendar-container {
     max-width: 430px;
     margin: 0 auto;
-    /* top: 160px; */
     top: 30px;
     align-items: center;
     text-align: center;
@@ -88,14 +85,6 @@ body {
     border-bottom: 1px solid black;
     padding-bottom: 20px;
 }
-
-/* @media screen and (max-width: 320px) {
-    .calendar-container {
-        width: 100%;
-        padding: 5px;
-    }
-    
-} */
 
 input {
     width: 100%;
@@ -165,10 +154,8 @@ input {
     padding: 10px;
     border-radius: 30px;
     font-size: 20px;
-    /* font-weight: bold; */
     position: relative;
     bottom: -30px;
-    /* right: -130px; */
     right: -25%;
 }
 
