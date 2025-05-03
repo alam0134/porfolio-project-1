@@ -1,21 +1,41 @@
-.bg-blur {
-    background-color: rgba(217, 217, 217, 0.5);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
 
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    /* padding: 20px; */
-    background: url("../images/27080.jpg") no-repeat center center/cover;
     backdrop-filter: blur(80px);
     height: 100vh;
+    max-width: 430px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.bg-blur {
+    background-color: rgba(217, 217, 217, 0.5);
+    height: 100%;
+    width: 100%;
+    max-width: 430px;
+    position: absolute;
+}
+
+.bg-image {
+    height: 100vh;
+    width: 100%;
+    max-width: 430px;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bg-image img {
+    width: 100%;
+    max-width: 430px;
+    height: 100vh;
+    object-fit: cover;
+    filter: blur(80px); /* Apply blur effect */
 }
 
 .confirmation-container {
