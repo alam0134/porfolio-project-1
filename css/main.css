@@ -8,11 +8,17 @@
 }
 
 body {
-    background-color: #E1E1E1;
-    margin-bottom: 50px;
+    max-width: 430px;
+    margin: 0 auto;
 }
 
 .container {
+    background-color: #E1E1E1;
+    max-width: 430px;
+    margin: 0 auto;
+}
+
+.max-width {
     max-width: 430px;
     margin: 0 auto;
 }
